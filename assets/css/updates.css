@@ -1,0 +1,23 @@
+.upIcon{
+	transition: all .2s ease-in-out;
+}
+
+.upIcon:hover{
+ 
+
+}
+
+.blurSub{
+	transition: all .2s ease-in-out;
+}
+
+.upIcon:hover + .blurSub{
+	color: transparent;
+	text-shadow: 0 0 2px rgba(0,0,0,0.5);
+
+}
+
+.info:hover{
+	cursor: default;
+}
+
