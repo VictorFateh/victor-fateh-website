@@ -20,3 +20,7 @@
 .info:hover{
 	cursor: default;
 }
+
+.footer-dark{
+	background-color: #e6e6e6;
+}
