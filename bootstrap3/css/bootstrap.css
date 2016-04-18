@@ -983,7 +983,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 2px solid #e6e6e6;
 }
 .sr-only {
   position: absolute;
