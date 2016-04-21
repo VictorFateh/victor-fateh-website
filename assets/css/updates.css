@@ -20,3 +20,13 @@
 .info:hover{
 	cursor: default;
 }
+
+.active{
+    transition: all .2s ease-in-out;
+    background: #2d2d86;
+}
+.active:hover{
+    /* Brighten on Hover
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    */
+}
