@@ -21,7 +21,6 @@
 	cursor: default;
 }
 
-<<<<<<< HEAD
 .active{
     transition: all .2s ease-in-out;
     background: #2d2d86;
@@ -31,8 +30,3 @@
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
     */
 }
-=======
-.footer-dark{
-	background-color: #e6e6e6;
-}
->>>>>>> refs/remotes/origin/master
