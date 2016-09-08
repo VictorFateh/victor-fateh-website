@@ -1801,10 +1801,6 @@ pre code {
   transition: all .2s ease-in-out;
   width: 33.33333333%;
 }
-.col-md-4:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-}
 .col-md-3 {
   width: 25%;
 }

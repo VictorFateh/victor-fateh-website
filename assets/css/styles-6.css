@@ -191,7 +191,7 @@ p {
 }
 .main-wrapper .job-title {
   color: #3F4650;
-  font-size: 16px;
+  font-size: 2.2rem;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
@@ -208,7 +208,7 @@ p {
 }
 .main-wrapper .project-title {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -236,8 +236,7 @@ p {
   background: #3F3FBF;
 }
 .footer {
-  padding: 30px;
-  padding-top: 60px;
+  padding: 10px;
 }
 .footer .copyright {
   line-height: 1.6;
