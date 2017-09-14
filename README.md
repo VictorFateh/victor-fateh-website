@@ -6,14 +6,4 @@ http://victorfateh.com/
 Goals:
 -Simplicity
 
-Main Pages to be built: 
-
--About Me
-
--Photography
-
--Contact me
-
--My Music 
-
--Projects
+Originally built in 2014, too lazy to update :)
