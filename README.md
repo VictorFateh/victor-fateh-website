@@ -6,4 +6,4 @@ http://victorfateh.com/
 Goals:
 -Simplicity
 
-Originally built in 2014, too lazy to update :)
+Originally built in 2014!
