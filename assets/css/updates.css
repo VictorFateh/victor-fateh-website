@@ -20,7 +20,7 @@
 
 .active{
     transition: all .2s ease-in-out;
-    background: #2d2d86;
+    background: #0287ca;
 }
 .active:hover{
 }
