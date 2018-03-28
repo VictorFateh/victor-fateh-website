@@ -24,3 +24,11 @@
 }
 .active:hover{
 }
+#index-title{
+	font-family: "fira-sans-2",sans-serif;
+	font-weight: 300;
+	font-size: 1000%;
+}
+.clean-font {
+	font-weight: 300;
+}

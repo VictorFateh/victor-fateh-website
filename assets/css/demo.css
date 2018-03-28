@@ -203,6 +203,10 @@
   
 }
 
+.logo-container:hover{
+    cursor: default;
+}
+
 .logo-container .logo{
     overflow: hidden;
     border-radius: 50%;
