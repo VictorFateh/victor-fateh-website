@@ -20,25 +20,30 @@
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" /> </head>
 
 <body>
-    <!-- Navbar will come here -->
-    <div id="navbar">
-        <nav class="navbar navbar-ct-victorBlue" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header"> <a class="navbar-brand" href="/">VF Home</a> </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="hvr-sweep-to-top"><a href="about">About Me</a></li>
-                        <li class="active"><a href="">Projects</a></li>
-                        <li class="hvr-sweep-to-top"><a href="resume">Resume</a></li>
-                        <li class="hvr-sweep-to-top"><a href="contact">Contact Me</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-ct-victorBlue">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a class="navbar-brand" href="/">VF Home</a>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
-    </div>
-    <!-- end navbar -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hvr-sweep-to-top"><a href="about">About Me</a></li>
+                    <li class="active"><a href="projects">Projects</a></li>
+                    <li class="hvr-sweep-to-top"><a href="resume">Resume</a></li>
+                    <li class="hvr-sweep-to-top"><a href="contact">Contact Me</a></li>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <div class="wrapper container">
         <div class="big-info">
             <h1 class="text-center clean-font" style="cursor: default;">Projects</h1> </div>
@@ -52,7 +57,7 @@
                         <p>The intent of the project was to test our ability to work with and make sense of a large data, in this case a retail dataset.</p>
                         <p>Our algorithm determined customer valuation (monetary/volume value to retailer) through classification.</p>
                         <p>The latter half of the script used Scikits Learn library to predict new incoming customer classification based on the pre-built tree.</p>
-                        <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/akuangsaechao/CS185C">Project Link</a></h5>
+                        <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/akuangsaechao/CS185C">Github Link</a></h5>
                     </div>
                     <br>
                     <!-- Carousel -->
@@ -90,7 +95,7 @@
                         <p>We built a two player bluetooth Battleships game, complete with custom art and animations!</p>
                         <p>The project was a rigorous test of our design, architecture, and collaborative skills.</p>
                         <p>This was my first exposure to working within and across Android building the UI/UX as well as pulling from external resources to implement more complicated features.</p>
-                        <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/VictorFateh/cs161_softwareproject">Project Link</a></h5>
+                        <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/VictorFateh/cs161_softwareproject">Github Link</a></h5>
                     </div>
                     <br>
                     <!-- Carousel -->
@@ -131,7 +136,7 @@
                 <p>Project goal was to collect real time trading data and implement a trading agent that uses machine learning to improve perforamnce of trading strategy.</p>
                 <p>We used an EMA crossover strategy to make paper-trades based off data collected from Bitfinex</p>
                 <p>We used a Naive Bayes Classifier and stored immediate percepts upon an execution of a trade. Then future trades would be evaluated as being successful or not based on the past</p>
-                <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/VictorFateh/BitcoinTradingAgent">Project Link</a></h5>
+                <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/VictorFateh/BitcoinTradingAgent">Github Link</a></h5>
             </div>
             <br>
             <!-- Carousel -->
@@ -165,7 +170,7 @@
                 <p>My first ever hackathon involved building a webscraping course selector for Computer Science students at UCSC.</p>
                 <p>The script scrapes all course offerings off the current UC course page and creates an optimal schedule based on unit count, course offering, and course times.</p>
                 <p>This was my first real attempt at building with Python and Web2Py. It was a crazy 48 hours!</p>
-                <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/nicoaw/slugscheduler">Project Link</a></h5>
+                <h5 class="text-center"><a class="btn btn-primary" target="_blank" href="https://github.com/nicoaw/slugscheduler">Github Link</a></h5>
             </div>
             <br>
             <!-- Carousel -->
@@ -184,22 +189,22 @@
             <!-- End Carousel -->
         </div>
         <!-- Next Game -->
-    </div>
-    <!-- section -->
-    </div>
-    <hr>
-    <footer class="footer">
-        <div class="container">
-            <div class="social-area pull-right">
-                <a class="btn btn-social btn-linkedin btn-simple" onclick="window.open('https://www.linkedin.com/in/victorfateh')"> <i class="fa fa-linkedin-square"></i> </a>
-                <a class="btn btn-social btn-github btn-simple" onclick="window.open('https://github.com/VictorFateh')"> <i class="fa fa-github"></i> </a>
+        <!-- section -->
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <div class="social-area pull-right">
+                    <a class="btn btn-social btn-linkedin btn-simple" onclick="window.open('https://www.linkedin.com/in/victorfateh')"> <i class="fa fa-linkedin-square"></i> </a>
+                    <a class="btn btn-social btn-github btn-simple" onclick="window.open('https://github.com/VictorFateh')"> <i class="fa fa-github"></i> </a>
+                </div>
+                <div class="copyright"> © 2018 Victor Fateh </div>
             </div>
-            <div class="copyright"> © 2018 Victor Fateh </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 </body>
-<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/get-shit-done.js"></script>
 <script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+
 </html>
