@@ -1,0 +1,22 @@
+{
+  "name": "victor-fateh-website",
+  "version": "1.0.0",
+  "description": "Victor Fateh's portfolio website",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorFateh/victor-fateh-website.git"
+  },
+  "author": "Victor Fateh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorFateh/victor-fateh-website/issues"
+  },
+  "homepage": "https://github.com/VictorFateh/victor-fateh-website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
