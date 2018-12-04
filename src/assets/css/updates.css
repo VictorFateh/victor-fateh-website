@@ -1,54 +1,55 @@
-.upIcon{
-	transition: all .2s ease-in-out;
+.upIcon {
+  transition: all 0.1s ease-in-out;
 }
 
-.upIcon:hover{
+.upIcon:hover {
 }
 
-.blurSub{
-	transition: all .2s ease-in-out;
+.blurSub {
+  transition: all 0.1s ease-in-out;
 }
 
-.upIcon:hover + .blurSub{
-	color: transparent;
-	text-shadow: 0 0 2px rgba(0,0,0,0.5);
+.upIcon:hover + .blurSub {
+  color: transparent;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-.info:hover{
-	cursor: default;
+.info:hover {
+  cursor: default;
 }
 
-.active{
-    transition: all .2s ease-in-out;
-    background: #0287ca;
+.active {
+  transition: all 0.2s ease-in-out;
+  background: #0287ca;
 }
-.active:hover{
+.active:hover {
 }
-#bg-title{
-	font-family: "fira-sans-2",sans-serif;
-	font-weight: 300;
-	font-size: 800%;
+#bg-title {
+  font-family: "fira-sans-2", sans-serif;
+  font-weight: 300;
+  font-size: 800%;
 }
-#sm-title{
-	font-family: "fira-sans-2",sans-serif;
-	font-weight: 400;
-	font-size: 900%;
+#sm-title {
+  font-family: "fira-sans-2", sans-serif;
+  font-weight: 400;
+  font-size: 900%;
 }
 .clean-font {
-	font-weight: 300;
+  font-weight: 300;
 }
-.lg-view{
-   display:block;
+.lg-view {
+  display: block;
 }
 
-.sm-view{
-   display:none;
+.sm-view {
+  display: none;
 }
-@media (max-width: 991px){
-	.lg-view{
-       display:none;
-    }
+@media (max-width: 991px) {
+  .lg-view {
+    display: none;
+  }
 
-    .sm-view{
-       display:block;
+  .sm-view {
+    display: block;
+  }
 }

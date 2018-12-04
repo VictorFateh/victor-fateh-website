@@ -3908,10 +3908,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-header {
     float: left;
     display: inline-block;
-      transition: all .2s ease-in-out;
-  }
-  .navbar-header:hover{
-  transform: scale(1.1);
   }
 }
 

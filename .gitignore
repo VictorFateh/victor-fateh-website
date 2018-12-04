@@ -1,9 +1,9 @@
 _*
 _DS_Store
 .DS_Store
-google*
+google19acb22f4f88b6af.html
 /src/assets/*.DS_Store
-sitemap.xml
+*.xml
 .htaccess
 /node_modules
 /build
