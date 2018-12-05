@@ -22,10 +22,14 @@ function css() {
     .pipe(dest("dist/assets/css"));
 }
 
-function bootstrap() {
-  return src("src/bootstrap3/**/*.*")
+function bootstrapCSS() {
+  return src("src/bootstrap3/**/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(dest("dist/bootstrap3"));
+}
+
+function bootstrapJS() {
+  return src("src/bootstrap3/**/*.js").pipe(dest("dist/bootstrap3"));
 }
 
 function img() {
@@ -34,4 +38,4 @@ function img() {
     .pipe(dest("dist/assets/img"));
 }
 
-exports.default = parallel(html, css, bootstrap, js, img);
+exports.default = parallel(html, css, bootstrapJS, bootstrapCSS, js, img);
