@@ -2,8 +2,7 @@ _*
 _DS_Store
 .DS_Store
 google19acb22f4f88b6af.html
-/src/assets/*.DS_Store
 *.xml
 .htaccess
 /node_modules
-/build
+/dist
