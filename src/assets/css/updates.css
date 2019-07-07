@@ -56,3 +56,6 @@
 .info p {
   color: black;
 }
+.job-title {
+  margin-bottom: 0.2em !important;
+}

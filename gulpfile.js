@@ -4,19 +4,19 @@ const cleanCSS = require("gulp-clean-css");
 const minify = require("gulp-minify");
 const imagemin = require("gulp-imagemin");
 
-function html() {
+function html(cb) {
   return src("src/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("dist"));
 }
 
-function js() {
+function js(cb) {
   return src("src/assets/js/*.js")
     .pipe(minify())
     .pipe(dest("dist/assets/js"));
 }
 
-function css() {
+function css(cb) {
   return src("src/assets/css/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(dest("dist/assets/css"));

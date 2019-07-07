@@ -1,12 +1,21 @@
-# Victor Fateh Personal Website
+# [victorfateh.com](https://www.victorfateh.com/)
 
-Originally built in 2014 as my first serious college freshman project.
+## Why
 
-This was my first attempt at making a website. The goal was to provide a clear view into who I was and what I was building.
+First college project built in 2014.
 
-It's now filled with spaghetti code and plenty of happy accidents.
+It is now a mess of spaghetti code that I keep for nostalgia sake.
 
-It's a great learning example and I occasionally come back to clean things up.
+## Install
 
-[victorfateh.com](https://www.victorfateh.com/)
+```
+npm i
+```
 
+## Distribution
+
+```
+gulp
+```
+
+### That's literally it
