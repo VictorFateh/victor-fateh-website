@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/VictorFateh/victor-fateh-website#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sitemap": "^7.6.0"
   },
   "dependencies": {
     "gulp-clean-css": "^4.2.0",

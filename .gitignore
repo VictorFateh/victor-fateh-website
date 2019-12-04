@@ -6,3 +6,4 @@ google19acb22f4f88b6af.html
 .htaccess
 /node_modules
 /dist
+.firebase/
