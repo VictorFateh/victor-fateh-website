@@ -1,15 +1,35 @@
 version: 2.1
-description: Deploy to Firebase Hosting
-commands:
+
+executors:
+  my-executor:
+    docker:
+      - image: circleci/node:10.16.3
+
+workflows:
+  website:
+    jobs:
+      - deploy:
+          name: load-config-develop
+          filters:
+            branches:
+              only: develop
+          api-key: $FIREBASE_TOKEN
+
+jobs:
   deploy:
-    description: Deploy to firebase
+    executor: my-executor
+    parameters:
+      api-key:
+        type: string
+
+
     steps:
+      - checkout
       - run:
           name: Install Dependencies
-          command: npm install
-      - run:
-          name: Run Gulp
-          command: gulp
+          command: |
+            npm install && gulp
+
       - run:
           name: Deploy to Firebase
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+          command: ./node_modules/.bin/firebase deploy --token=<< parameters.api-key >> --non-interactive
