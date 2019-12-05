@@ -3,7 +3,7 @@ version: 2.1
 executors:
   my-executor:
     docker:
-      - image: circleci/node:10.16.3
+      - image: circleci/node:10
 
 workflows:
   website:
@@ -12,7 +12,7 @@ workflows:
           name: deploy-develop
           filters:
             branches:
-              only: develop
+              only: master
           api-key: $FIREBASE_TOKEN
 
 jobs:
