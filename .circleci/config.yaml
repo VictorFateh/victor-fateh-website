@@ -3,7 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/node:10
-    working_directory: ~/victor-fateh-website
     filters:
             branches:
               only: release
