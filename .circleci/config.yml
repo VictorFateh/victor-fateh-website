@@ -28,7 +28,12 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
-            npm install && gulp
+            npm install && npm install --global gulp-cli
+
+      - run: 
+          name: Run Gulp 
+          command: |
+            gulp
 
       - run:
           name: Deploy to Firebase
