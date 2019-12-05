@@ -1,20 +1,25 @@
-deploy-job:
-  docker:
-   - image: circleci/node:10
-  steps:
-   - run:
-       name: Deploy Master to Firebase
-       command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+version: 2.1
+
+executors:
+  my-executor:
+    docker:
+      - image: circleci/node:10
 
 workflows:
-  version: 2
-
-  -deploy:
+  socotra:
     jobs:
-      - build-job
-      - deploy-job:
-          requires:
-            - build-job
+      # Load config from develop into Socotra sandbox
+      - load-config:
+          name: deploy-to-firebase
           filters:
             branches:
               only: master
+
+jobs:
+  load-config:
+    executor: my-executor
+
+    steps:
+      - run:
+       name: Deploy Master to Firebase
+       command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
