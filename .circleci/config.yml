@@ -9,7 +9,7 @@ workflows:
   website:
     jobs:
       - deploy:
-          name: load-config-develop
+          name: deploy-develop
           filters:
             branches:
               only: develop
