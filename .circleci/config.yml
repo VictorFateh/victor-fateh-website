@@ -12,7 +12,7 @@ workflows:
           name: deploy-develop
           filters:
             branches:
-              only: master
+              only: release
           api-key: $FIREBASE_TOKEN
 
 jobs:
