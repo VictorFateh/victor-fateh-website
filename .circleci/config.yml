@@ -1,0 +1,40 @@
+version: 2.1
+
+executors:
+  my-executor:
+    docker:
+      - image: circleci/node:10
+
+workflows:
+  website:
+    jobs:
+      - deploy:
+          name: deploy-develop
+          filters:
+            branches:
+              only: release
+          api-key: $FIREBASE_TOKEN
+
+jobs:
+  deploy:
+    executor: my-executor
+    parameters:
+      api-key:
+        type: string
+
+
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: |
+            npm install && sudo npm install --global gulp-cli
+
+      - run: 
+          name: Run Gulp 
+          command: |
+            gulp
+
+      - run:
+          name: Deploy to Firebase
+          command: ./node_modules/.bin/firebase deploy --token=<< parameters.api-key >> --non-interactive

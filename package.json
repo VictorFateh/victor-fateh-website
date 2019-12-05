@@ -17,15 +17,16 @@
   },
   "homepage": "https://github.com/VictorFateh/victor-fateh-website#readme",
   "devDependencies": {
+    "firebase-tools": "^7.9.0",
     "gulp": "^4.0.2",
-    "gulp-sitemap": "^7.6.0"
-  },
-  "dependencies": {
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.1.0",
     "gulp-minify": "^3.1.0",
+    "gulp-sitemap": "^7.6.0",
+    "imagemin-svgo": "^7.0.0",
     "set-value": ">=2.0.1"
-  }
+  },
+  "dependencies": {}
 }
