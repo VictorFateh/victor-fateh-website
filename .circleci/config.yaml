@@ -1,30 +1,20 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node:10
-    filters:
-            branches:
-              only: release
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            # Find a cache corresponding to this specific package-lock.json
-            - v1-npm-deps-{{ checksum "package-lock.json" }}
-            # Fallback cache to be used
-            - v1-npm-deps-
-      - run:
-          name: Install Dependencies
-          command: npm install
-      - save_cache:
-          key: v1-npm-deps-{{ checksum "package-lock.json" }}
-          paths:
-            - ./node_modules
-      - run:
-          name: Gulp
-          command: gulp
-      - run:
-          name: Firebase Deploy
-          command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+deploy-job:
+  docker:
+   - image: circleci/node:10
+  steps:
+   - run:
+       name: Deploy Master to Firebase
+       command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
 
+workflows:
+  version: 2
+
+  -deploy:
+    jobs:
+      - build-job
+      - deploy-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master
