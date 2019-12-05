@@ -1,25 +1,15 @@
 version: 2.1
-
-executors:
-  my-executor:
-    docker:
-      - image: circleci/node:10
-
-workflows:
-  socotra:
-    jobs:
-      # Load config from develop into Socotra sandbox
-      - load-config:
-          name: deploy-to-firebase
-          filters:
-            branches:
-              only: master
-
-jobs:
-  load-config:
-    executor: my-executor
-
+description: Deploy to Firebase Hosting
+commands:
+  deploy:
+    description: Deploy to firebase
     steps:
       - run:
-       name: Deploy Master to Firebase
-       command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run Gulp
+          command: gulp
+      - run:
+          name: Deploy to Firebase
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
