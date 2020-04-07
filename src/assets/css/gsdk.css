@@ -2008,9 +2008,6 @@ fieldset[disabled] .form-control {
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
-.navbar-ct-victorBlue{
-  background-color: #45c0fd;
-}
 .navbar-ct-gray{
   background-color: #5A5A5A;
 }
@@ -3101,6 +3098,15 @@ fieldset[disabled] .form-control {
   background: -o-linear-gradient(top, #787878 0%, #343434 100%);
   background: -ms-linear-gradient(top, #787878 0%, #343434 100%);
   background: linear-gradient(to bottom, #787878 0%, #343434 100%);
+}
+.icon-purple {
+  background: #747EE0;
+  background: -moz-linear-gradient(top, #747EE0 0%, #767aa5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #767aa5), color-stop(100%, #767aa5));
+  background: -webkit-linear-gradient(top, #747EE0 0%, #767aa5 100%);
+  background: -o-linear-gradient(top, #747EE0 0%, #767aa5 100%);
+  background: -ms-linear-gradient(top, #747EE0 0%, #767aa5 100%);
+  background: linear-gradient(to bottom, #747EE0 0%, #767aa5 100%);
 }
 .info {
 

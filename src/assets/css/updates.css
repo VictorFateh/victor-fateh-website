@@ -2,9 +2,6 @@
   transition: all 0.1s ease-in-out;
 }
 
-.upIcon:hover {
-}
-
 .blurSub {
   transition: all 0.1s ease-in-out;
 }
@@ -13,25 +10,24 @@
   color: transparent;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
-
 .info:hover {
   cursor: default;
 }
-
 .active {
   transition: all 0.2s ease-in-out;
-  background: #0287ca;
+  background: #767aa5;
 }
-.active:hover {
+.navbar-ct-victorBlue{
+  background-color: #747EE0;
 }
 #bg-title {
   font-family: "fira-sans-2", sans-serif;
-  font-weight: 300;
+  font-weight: 370;
   font-size: 800%;
 }
 #sm-title {
   font-family: "fira-sans-2", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 900%;
 }
 .clean-font {
@@ -58,4 +54,10 @@
 }
 .job-title {
   margin-bottom: 0.2em !important;
+}
+body {
+  background-color: #F6F9FC;
+}
+.footer {
+  background-color: #F6F9FC;
 }
