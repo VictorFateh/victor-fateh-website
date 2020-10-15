@@ -4,7 +4,7 @@
   "description": "Victor Fateh's portfolio website",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/VictorFateh/victor-fateh-website#readme",
   "devDependencies": {
-    "firebase-tools": "^7.16.2",
+    "firebase-tools": "^8.12.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -26,8 +26,8 @@
     "gulp-minify": "^3.1.0",
     "gulp-sitemap": "^7.6.0",
     "imagemin-svgo": "^7.1.0",
-    "set-value": ">=2.0.1",
-    "kind-of": ">=6.0.3"
+    "kind-of": ">=6.0.3",
+    "set-value": ">=2.0.1"
   },
   "dependencies": {}
 }
