@@ -27,7 +27,7 @@
     "gulp-sitemap": "^7.6.0",
     "imagemin-svgo": "^7.1.0",
     "kind-of": ">=6.0.3",
-    "set-value": ">=2.0.1"
+    "set-value": ">=4.0.1"
   },
   "dependencies": {}
 }
