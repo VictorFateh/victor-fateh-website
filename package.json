@@ -18,11 +18,11 @@
   "homepage": "https://github.com/VictorFateh/victor-fateh-website#readme",
   "devDependencies": {
     "firebase-tools": "^11.25.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-minify": "^3.0.0",
     "gulp-sitemap": "^7.6.0",
     "imagemin-svgo": "^10.0.1",
